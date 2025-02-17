@@ -352,9 +352,6 @@ local Button = PlayerTab:CreateButton({
 
 
                   
-               local Button = PlayerTab:CreateButton({
-                  Name = "🏈MUsical Chairs🏈 This one has auto catch every time and speed",
-                     Callback = function()
                            
                local Button = PlayerTab:CreateButton({
                   Name = "🏈NFL Universe Football🏈 This one has auto catch every time and speed",
