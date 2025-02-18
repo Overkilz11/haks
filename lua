@@ -29,8 +29,8 @@ local Window = Rayfield:CreateWindow({
       Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
       SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
-      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"CAPPED"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"https://raw.githubusercontent.com/Overkilz11/haks/refs/heads/main/KEY%20FILE"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
 
@@ -351,9 +351,18 @@ local Button = PlayerTab:CreateButton({
                })
 
 
+                  
+                           
+               local Button = PlayerTab:CreateButton({
+                  Name = "🏈NFL Universe Football🏈 This one has auto catch every time and speed",
+                     Callback = function()
+                        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/03624f832da93e45f8dc1d8234f7bfca.lua"))()
+                     end,
+                  })
 
 
-               local PlayerTab = Window:CreateTab("Universe Football", 4483362458) -- Title, Image
+
+               local PlayerTab = Window:CreateTab("Universe Football",) -- Title, Image
                local Button = PlayerTab:CreateButton({
                   Name = "🏈NFL Universe Football🏈 This has free Emotes!!!",
                      Callback = function()
